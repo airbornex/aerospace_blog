@@ -15,16 +15,24 @@ project:
   bibliography: references.bib  # Optional: Add if you have a bibliography file for citations
   toc:
     - file: intro.md
+    - title: Supersonics
       children:
         - file: supersonics/ch1/intro.md
+          title: Introduction to Supersonics
           children:
             - file: supersonics/ch1/compressible.md
+             
             - file: supersonics/ch1/mach_number.md
+             
             - file: supersonics/ch1/flow_regimes.md
+             
         - file: supersonics/ch2/one_dimensional_flow.md
+          title: One Dimensional Flow
           children:
             - file: supersonics/ch2/shocks_and_types.md
+             
             - file: supersonics/ch2/oned_rel.md
+     
             # - file: supersonics/ch2/mach_number.md
             #   title: Mach Number and Compressibility
             # - file: supersonics/ch2/flow_regimes.md
