@@ -11,12 +11,11 @@ project:
           department: Department of Aerospace Engineering
       email: amankrpsadv@kgpian.iitkgp.ac.in
       url: https://www.orbitingideas.com
-  github: https://github.com/aman226/aman226.github.io
+  github: https://github.com/airbornex/aerospace_blogs
   bibliography: references.bib  # Optional: Add if you have a bibliography file for citations
   toc:
     - file: intro.md
       title: Introduction
-
     - title: Supersonics
       children:
         - file: supersonics/ch1/intro.md
