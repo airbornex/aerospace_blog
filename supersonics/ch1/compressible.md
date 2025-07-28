@@ -11,7 +11,7 @@ Supersonic flows are fundamentally compressible. At first glance, one might defi
 
 ## Thermodynamic Perspective
 
-To understand compressibility, we turn to thermodynamics. The **specific volume** \( v \) is expressed as a function of temperature \( T \) and pressure \( P \):
+To understand compressibility, we turn to thermodynamics. The **specific volume** $v$ is expressed as a function of temperature $T$ and pressure $P$:
 
 ```{math}
 :label: eq-specific-volume
@@ -25,7 +25,7 @@ Differentiating this expression yields:
 dv = \left( \frac{\partial v}{\partial P} \right)_T dP + \left( \frac{\partial v}{\partial T} \right)_P dT
 ```
 
-Dividing both sides by \( v \), we obtain the fractional change in specific volume:
+Dividing both sides by $v$, we obtain the fractional change in specific volume:
 
 ```{math}
 :label: eq-fractional-dv
@@ -34,21 +34,21 @@ Dividing both sides by \( v \), we obtain the fractional change in specific volu
 
 **This introduces two key thermodynamic properties:**
 
-- **Isothermal compressibility** \( \kappa_T \), which quantifies the change in specific volume due to pressure at constant temperature:
+- **Isothermal compressibility** $ \kappa_T $, which quantifies the change in specific volume due to pressure at constant temperature:
 
   ```{math}
   :label: eq-kappaT
   \kappa_T = -\frac{1}{v} \left( \frac{\partial v}{\partial P} \right)_T
   ```
 
-- **Coefficient of volume expansion** \( \beta \), which quantifies the change in specific volume due to temperature at constant pressure:
+- **Coefficient of volume expansion** $ \beta $, which quantifies the change in specific volume due to temperature at constant pressure:
 
   ```{math}
   :label: eq-beta
   \beta = \frac{1}{v} \left( \frac{\partial v}{\partial T} \right)_P
   ```
 
-Equation {eq}`eq-fractional-dv` shows that changes in specific volume (or density) result from both **pressure** and **temperature** variations. In high-speed flows, where density changes are primarily driven by pressure, the flow exhibits significant **compressibility effects**. Conversely, in flows like natural convection, where pressure is nearly constant and density changes stem from temperature variations, the flow is often treated as **incompressible**, despite a non-zero \( \beta \) in {eq}`eq-beta`.
+Equation {eq}`eq-fractional-dv` shows that changes in specific volume (or density) result from both **pressure** and **temperature** variations. In high-speed flows, where density changes are primarily driven by pressure, the flow exhibits significant **compressibility effects**. Conversely, in flows like natural convection, where pressure is nearly constant and density changes stem from temperature variations, the flow is often treated as **incompressible**, despite a non-zero $ \beta $ in {eq}`eq-beta`.
 
 > In high-speed aerodynamics, compressibility is defined by the dominance of pressure-induced density changes, not merely the presence of density variation.
 
