@@ -34,29 +34,28 @@ project:
               title: Shocks and Their Classification
             - file: supersonics/ch2/oned_rel.md
               title: One Dimensional Flow Relations
-            # - file: supersonics/ch2/mach_number.md
-            #   title: Mach Number and Compressibility
-            # - file: supersonics/ch2/flow_regimes.md
-            #   title: Flow Regimes
-
-
-
-
 
 site:
-  template: book-theme  # Switched to blog-theme for better blog support
+  template: book-theme  # Kept as book-theme, suitable for academic content
   title: Sonic Frontiers Blog
   description: A blog exploring the physics and control of high-speed flight, with insights from aerospace engineering.
   options:
-    favicon: favicon.png  # Uncommented and ensured favicon inclusion
+    favicon: favicon.png
     logo: _static/logo_light.png
     logo_dark: _static/logo_dark.png
     style: _static/custom.css
     analytics:
-      provider: google  # Add Google Analytics for tracking (requires ID in environment)
-    comments: true  # Enable comments for blog posts (e.g., using utterances or disqus)
-    search: true  # Enable search functionality for better user experience
-  
+      provider: google  # Add Google Analytics ID via environment variable (e.g., GTAG)
+    comments: true  # Enable comments (configure utterances or disqus in a separate step if needed)
+    search: true  # Enable search functionality
+    # Add Thebe configuration for interactive code execution
+    launch_buttons:
+      thebe: true  # Enable Thebe for interactive code cells
+      jupyterhub_url: "http://localhost:8888"  # Local Jupyter server URL
+    thebe:
+      selector: ".cell"  # Targets code cells
+      selector_output: ".cell_output"  # Targets output area
+
   nav:
     - title: Explore More
       children:
@@ -64,7 +63,3 @@ site:
           url: https://sim.orbitingideas.com
         - title: Aerospace & Robotics Blog
           url: https://www.orbitingideas.com/blog
-  # actions:
-  #   - title: Learn More
-  #     url: https://mystmd.org/guide
-
